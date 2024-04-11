@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import './App.css';
+// import './index.css';
 
 import { ThirdwebProvider, } from "thirdweb/react"
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -12,6 +12,7 @@ import Navbar from './Components/NavBar';
 function App() {
   return (
     <>
+  <h1 className='decoration-yellow-50'>Helll tailwindcssx  </h1>
   <ThirdwebProvider>
   <Navbar/>
 

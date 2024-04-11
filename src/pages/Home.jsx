@@ -55,7 +55,6 @@ const Home = () => {
   }
   
   useEffect(() => {
-
     if(address)  fetchCampaigns();
   }, [address]);
 
