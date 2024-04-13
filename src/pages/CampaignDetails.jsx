@@ -77,8 +77,7 @@ const CampaignDetails = () => {
   const client = createThirdwebClient({
     clientId: "43e7eaab7fe66f54376971e735ecd535",
     secretKey: "8r_h7edsBBz6iu3Oown8VwylXQaXMA37ZflVWzxwIQmQGzuaUe7NRdyyy94Xb7I90ftsgGU5aUx_88gXxQgNng"
-  });
-
+});
   const contract = getContract({
     client,
     chain: sepolia,
