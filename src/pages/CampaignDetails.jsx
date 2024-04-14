@@ -10,6 +10,7 @@ import { useActiveAccount } from "thirdweb/react";
 import { readContract, resolveMethod,prepareContractCall, sendTransaction,createThirdwebClient,getContract, toWei } from "thirdweb";
 import {ethers} from "ethers"
 import {sepolia} from "thirdweb/chains"
+ 
 const getDonations = async (pId,contract) => {
   // const donations = await contract.call('getDonators', [pId]);
   console.log("a")
@@ -75,13 +76,13 @@ const CampaignDetails = () => {
   // const [contract, SetContract] = useState(null);
   const remainingDays = daysLeft(state.deadline);
   const client = createThirdwebClient({
-    clientId: "43e7eaab7fe66f54376971e735ecd535",
-    secretKey: "8r_h7edsBBz6iu3Oown8VwylXQaXMA37ZflVWzxwIQmQGzuaUe7NRdyyy94Xb7I90ftsgGU5aUx_88gXxQgNng"
+    clientId: process.env.REACT_APP_CLIENT_ID,
+    secretKey: process.env.REACT_APP_SECRET_KEY,
 });
   const contract = getContract({
     client,
     chain: sepolia,
-    address: "0x64b9D2c681Be2C0eA935e85B22D810e4DfBbdEaD"
+    address: process.env.REACT_APP_CONTRACT
   })
   const fetchDonators = async () => {
    

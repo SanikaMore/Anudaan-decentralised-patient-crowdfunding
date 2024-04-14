@@ -23,7 +23,7 @@ const createCampaign = async (form, account,contract  ) => {
         form.title, // title
         form.description, // description
         form.target,
-        new Date(form.deadline).getTime(), // deadline,
+        new Date(form.deadline).getTime()/1000, // deadline,
         form.image,
       ]
     });
@@ -65,15 +65,15 @@ export const CreateCampaign = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const client = createThirdwebClient({
-      clientId: "43e7eaab7fe66f54376971e735ecd535",
-      secretKey: "8r_h7edsBBz6iu3Oown8VwylXQaXMA37ZflVWzxwIQmQGzuaUe7NRdyyy94Xb7I90ftsgGU5aUx_88gXxQgNng"
+      clientId: process.env.REACT_APP_CLIENT_ID,
+      secretKey: process.env.REACT_APP_SECRET_KEY,
   });
   
-    const contract = getContract({
-      client,
-      chain: sepolia,
-      address: "0x64b9D2c681Be2C0eA935e85B22D810e4DfBbdEaD"
-    });
+  const contract = getContract({
+    client,
+    chain: sepolia,
+    address: process.env.REACT_APP_CONTRACT
+  })
     checkIfImage(form.image, async (exists) => {
       if (exists) {
         setIsLoading(true)
