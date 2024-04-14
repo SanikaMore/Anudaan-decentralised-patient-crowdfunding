@@ -16,7 +16,7 @@ const getCampaigns = async (contract) => {
   const parsedCampaings = campaigns.map((campaign, i) => ({
     owner: campaign.owner,
     billNo: campaign.billNo,
-    title: campaign.title,
+    title: campaign.patientName,
     description: campaign.description,
     target: ethers.formatEther(campaign.target.toString()),
     deadline: String(campaign.deadline),
