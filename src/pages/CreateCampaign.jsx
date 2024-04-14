@@ -99,21 +99,21 @@ export const CreateCampaign = () => {
       <form onSubmit={handleSubmit} className="w-full mt-[65px] flex flex-col gap-[30px]">
         <div className="flex flex-wrap gap-[40px]">
           <FormField
-            labelName="Your Name *"
+            labelName="Patient Name *"
             placeholder="John Doe"
             inputType="text"
             value={form.name}
             handleChange={(e) => handleFormFieldChange('name', e)}
           />
           <FormField
-            labelName="Campaign Title *"
+            labelName="Disease Name *"
             placeholder="Write a title"
             inputType="text"
             value={form.title}
             handleChange={(e) => handleFormFieldChange('title', e)}
           />
           <FormField
-            labelName="Patient Bill NO *"
+            labelName="Patient Bill No *"
             placeholder="Bill No"
             inputType="text"
             value={form.billNo}
@@ -122,7 +122,7 @@ export const CreateCampaign = () => {
         </div>
 
         <FormField
-          labelName="Story *"
+          labelName="Personal Story *"
           placeholder="Write your story"
           isTextArea
           value={form.description}
