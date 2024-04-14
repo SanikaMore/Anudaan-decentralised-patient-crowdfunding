@@ -15,12 +15,17 @@ function App() {
       <Router>
         <div className="relative sm:-8 p-4 bg-[#13131a] min-h-screen flex flex-row">
           {/* <div className='bg-blue-500'>Helll tailwindcssx  </div> */}
-          <div className="sm:flex hidden mr-10 relative">
-            <Sidebar />
-          </div>
+          
           <div className="flex-1 max-sm:w-full max-w-[1280px] mx-auto sm:pr-5">
+           
 
             <Navbar />
+
+            <div style={{display:"flex"}}>
+
+               <div className="sm:flex hidden mr-10 relative">
+            <Sidebar />
+          </div>
             <Routes>
 
               <Route path="/" element={<Home />} />
@@ -28,6 +33,10 @@ function App() {
               <Route path="/create-campaign" element={<CreateCampaign />} />
               <Route path="/campaign-details/:id" element={<CampaignDetails />} />
             </Routes>
+
+            </div>
+
+            
           </div>
         </div>
       </Router>
