@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 function Footer() {
     return (
-        <div className="bg-[#1c1c24] text-white flex flex-col justify-center items-center rounded-[10px] sm:p-10 p-6">
+        <div className="bg-[#1c1c24] text-[#808191] flex flex-col justify-center items-center rounded-[10px] sm:p-10 p-6">
             <div className="w-full max-w-screen-lg flex flex-wrap justify-between items-center mb-6">
                 {/* Logo and website name */}
                 <div className="flex flex-col">
