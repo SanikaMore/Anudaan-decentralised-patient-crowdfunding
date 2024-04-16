@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Profile from './pages/Profile';
 import CampaignDetails from './pages/CampaignDetails';
 import { CreateCampaign } from './pages/CreateCampaign';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -32,6 +33,12 @@ function App() {
                 <Route path="/create-campaign" element={<CreateCampaign />} />
                 <Route path="/campaign-details/:id" element={<CampaignDetails />} />
               </Routes>
+            </div>
+
+            <div>
+             
+             <Footer/>
+
             </div>
           </div>
 
