@@ -19,14 +19,15 @@ export default function Navbar() {
             style={{
                 backgroundColor: "#42c966", // Add black background color
                 //padding: "10px", // Add padding for space around the content
-                display:"flex"
+                display:"flex",
+                borderRadius: "10px",
             }}
         >
             <div style={{ 
                 color: "white" ,
-                padding:"10px",
+                padding:"20px",
                 textAlign:"center",
-                fontSize:"20px",
+                fontSize:"35px",
                 fontWeight:"bold"
                         }}>
                 Patient Crowd Funding Platform

@@ -1,43 +1,40 @@
-// import logo from './logo.svg';
-// import './index.css';
-import Sidebar from "./Components/Sidebar";
-import { ThirdwebProvider, } from "thirdweb/react"
+import React from 'react';
+import { ThirdwebProvider } from "thirdweb/react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-// import {Home,Profile,CampaignDetails,CreateCampaign} from "./pages"
+import Sidebar from "./Components/Sidebar";
+import Navbar from './Components/NavBar';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
 import CampaignDetails from './pages/CampaignDetails';
 import { CreateCampaign } from './pages/CreateCampaign';
-import Navbar from './Components/NavBar';
+
 function App() {
   return (
     <ThirdwebProvider>
       <Router>
-        <div className="relative sm:-8 p-4 bg-[#13131a] min-h-screen flex flex-row">
-          {/* <div className='bg-blue-500'>Helll tailwindcssx  </div> */}
+        <div className=" p-4 bg-[#13131a] min-h-screen flex flex-col sm:flex-row">
           
-          <div className="flex-1 max-sm:w-full max-w-[1280px] mx-auto sm:pr-5">
-           
+          
 
-            <Navbar />
-
-            <div style={{display:"flex"}}>
-
-               <div className="sm:flex hidden mr-10 relative">
+          <div className="flex-1 w-full ">
+            {/* Navbar component */}
+            {/* <Navbar /> */}
+            <div className="sm:flex hidden w-full">
+            {/* Sidebar component at the top */}
             <Sidebar />
           </div>
-            <Routes>
-
-              <Route path="/" element={<Home />} />
-              <Route path="/profile" element={<Profile />} />
-              <Route path="/create-campaign" element={<CreateCampaign />} />
-              <Route path="/campaign-details/:id" element={<CampaignDetails />} />
-            </Routes>
-
-            </div>
-
             
+            <div className=" my-2 w-full">
+              {/* Routes component */}
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/profile" element={<Profile />} />
+                <Route path="/create-campaign" element={<CreateCampaign />} />
+                <Route path="/campaign-details/:id" element={<CampaignDetails />} />
+              </Routes>
+            </div>
           </div>
+
         </div>
       </Router>
     </ThirdwebProvider>

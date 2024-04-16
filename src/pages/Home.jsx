@@ -65,6 +65,9 @@ const Home = () => {
       title="All Campaigns"
       isLoading={isLoading}
       campaigns={campaigns}
+      style={{
+        
+      }}
     />
     </>
   )
