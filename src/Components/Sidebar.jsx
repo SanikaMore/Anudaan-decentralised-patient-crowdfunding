@@ -36,20 +36,18 @@ const Sidebar = () => {
     const [isActive, setIsActive] = useState('dashboard');
 
     return (
-        <div className="w-full flex justify-between  sticky top-0 h-[150px] bg-[#1c1c24] rounded-[20px] p-5">
+        <div className="w-full flex justify-between  sticky top-0 h-[100px] bg-[#1c1c24] rounded-[20px] p-4 " >
             {/* Left section with text */}
-            <div className="text-left text-3xl font-bold text-[#42c966]  mr-11">
-                <div>Patient</div>
-                <div>Crowdfunding</div>
-                <div>Plateform</div>
-            </div>
+            <div className="text-center text-2xl font-bold text-[#42c966] mr-auto" onClick={()=>{navigate('/')}} style={{textAlign: 'center'}}>
+    <div>Patient</div>
+    <div>Assist</div>
+</div>
+
 
             {/* Middle section with icons */}
-            <div style={{ marginLeft: '15rem',
-          marginTop:'26px'
-          }} className="flex space-x-11 ">
+            <div className="flex space-x-12 items-center">
                 {navlinks.map((link) => (
-                    <Icon
+                    <Icon 
                         key={link.name}
                         {...link}
                         isActive={isActive}

@@ -4,6 +4,7 @@ import  DisplayCampaigns  from '../Components/DisplayCampaigns';
 import { sepolia } from "thirdweb/chains";
 import { createThirdwebClient, readContract,getContract, resolveMethod } from "thirdweb";
 import {ethers} from 'ethers'
+import moment from 'moment';
 
 const getCampaigns = async (contract) => {
   // const campaigns = await contract.call('getCampaigns');
@@ -25,7 +26,8 @@ const getCampaigns = async (contract) => {
     pId: i
   }));
 
-  return parsedCampaings;
+  const filteredCampaigns = parsedCampaings.filter((campaign) => campaign.deadline > moment() && campaign.amountCollected < campaign.target);
+  return filteredCampaigns;
 }
 
 const Home = () => {

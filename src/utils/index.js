@@ -1,6 +1,8 @@
+import moment from "moment";
+
 export const daysLeft = (deadline) => {
-  const difference = new Date(deadline).getTime() - Date.now();
-  const remainingDays = difference / (1000 * 3600 * 24);
+  const difference = deadline - moment();
+  const remainingDays = difference / (3600 * 24*1000);
 
   return remainingDays.toFixed(0);
 };

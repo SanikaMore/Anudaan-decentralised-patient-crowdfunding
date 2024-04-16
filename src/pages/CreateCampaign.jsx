@@ -10,6 +10,7 @@ import FormField from '../Components/FormField';
 import { createThirdwebClient, getContract, prepareContractCall, resolveMethod, sendTransaction } from "thirdweb";
 import Loader from '../Components/Loader';
 import { checkIfImage } from '../utils';
+import moment from 'moment';
 
 const createCampaign = async (form, account,contract  ) => {
   try {
@@ -20,13 +21,14 @@ const createCampaign = async (form, account,contract  ) => {
       params: [
         account.address,
         form.billNo,
-        form.title, // title
+        form.name, // title
         form.description, // description
         form.target,
-        new Date(form.deadline).getTime()/1000, // deadline,
+        moment(form.deadline), // deadline,
         form.image,
       ]
     });
+    console.log(form.deadline)
     const { transactionHash } = await sendTransaction({account,transaction});
     console.log("contract call success", transactionHash)
   } catch (error) {
@@ -81,7 +83,7 @@ export const CreateCampaign = () => {
         if(activeAccount) await createCampaign({ ...form, target: ethers.parseUnits(form.target, 18) }, activeAccount, contract)
         else throw new Error("NO acc")
         setIsLoading(false);
-        // navigate('/');
+        navigate('/');
       } else {
         alert('Provide valid image URL')
         setForm({ ...form, image: '' });
@@ -104,13 +106,6 @@ export const CreateCampaign = () => {
             inputType="text"
             value={form.name}
             handleChange={(e) => handleFormFieldChange('name', e)}
-          />
-          <FormField
-            labelName="Disease Name *"
-            placeholder="Write a title"
-            inputType="text"
-            value={form.title}
-            handleChange={(e) => handleFormFieldChange('title', e)}
           />
           <FormField
             labelName="Patient Bill No *"
