@@ -49,8 +49,8 @@ The Decentralized Patient Relief Platform enables patients to create campaigns b
 
 This project is licensed under the [MIT License](LICENSE).
 
-### Contact
+<!-- ### Contact
 
 For any inquiries or support, please contact the project maintainer at [sanikam1543@gmail.com](mailto:sanikam1543@gmail.com).
 
-Thank you for using the Decentralized Patient Relief Platform! We hope this platform provides relief to patients in need.
+Thank you for using the Decentralized Patient Relief Platform! We hope this platform provides relief to patients in need. -->
