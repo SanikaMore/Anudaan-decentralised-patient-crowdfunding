@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+## Decentralized Patient Relief Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Decentralized Patient Relief Platform GitHub repository! This platform serves as a crowdfunding solution for patients seeking financial assistance for their medical treatments. By harnessing blockchain technology and decentralized finance (DeFi) principles, patients can initiate campaigns to gather funds for their medical expenses.
 
-## Available Scripts
+### Description
 
-In the project directory, you can run:
+The Decentralized Patient Relief Platform enables patients to create campaigns by inputting their details and setting fundraising goals. Contributors can then make donations to support these campaigns. The platform operates on the Sepolia Testnet Ethereum network, ensuring secure and transparent transactions.
 
-### `npm start`
+### Execution Steps
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Backend (Web3)
+1. **Create a Metamask Account in Sepolia Testnet Ethereum:**
+   - Visit [Metamask](https://metamask.io/) and create an account in the Sepolia Testnet Ethereum network.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Add Private Key to .env:**
+   - After creating the Metamask account, obtain the private key and add it to the `.env` file as `private_key`.
 
-### `npm test`
+3. **Clone Repository:**
+   ```
+   git clone https://github.com/krishnan472003/decentralised-patient-crowdfunding.git
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **Install Dependencies:**
+   ```
+   cd decentralised-patient-crowdfunding
+   npm install
+   ```
 
-### `npm run build`
+5. **Deploy Contracts:**
+   ```
+   npm run deploy
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+6. **Connect Wallet on Website:**
+   - Visit the website and connect your wallet to configure your account.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Frontend (Client)
+1. **Install Dependencies:**
+   ```
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Start Development Server:**
+   ```
+   npm start
+   ```
 
-### `npm run eject`
+### License
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This project is licensed under the [MIT License](LICENSE).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Contact
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+For any inquiries or support, please contact the project maintainer at [sanikam1543@gmail.com](mailto:sanikam1543@gmail.com).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for using the Decentralized Patient Relief Platform! We hope this platform provides relief to patients in need.
