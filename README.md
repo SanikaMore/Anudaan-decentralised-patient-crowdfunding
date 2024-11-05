@@ -1,10 +1,10 @@
-## Decentralized Patient Relief Platform
+## Decentralized Patient Crowdfunding Platform
 
-Welcome to the Decentralized Patient Relief Platform GitHub repository! This platform serves as a crowdfunding solution for patients seeking financial assistance for their medical treatments. By harnessing blockchain technology and decentralized finance (DeFi) principles, patients can initiate campaigns to gather funds for their medical expenses.
+Welcome to the Decentralized Patient Crowdfunding Platform GitHub repository! This platform serves as a crowdfunding solution for patients seeking financial assistance for their medical treatments. By harnessing blockchain technology and decentralized finance (DeFi) principles, patients can initiate campaigns to gather funds for their medical expenses.
 
 ### Description
 
-The Decentralized Patient Relief Platform enables patients to create campaigns by inputting their details and setting fundraising goals. Contributors can then make donations to support these campaigns. The platform operates on the Sepolia Testnet Ethereum network, ensuring secure and transparent transactions.
+The Decentralized Patient Crowdfunding Platform enables patients to create campaigns by inputting their details and setting fundraising goals. Contributors can then make donations to support these campaigns. The platform operates on the Sepolia Testnet Ethereum network, ensuring secure and transparent transactions.
 
 ### Execution Steps
 
