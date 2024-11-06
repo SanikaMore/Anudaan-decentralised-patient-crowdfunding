@@ -1,10 +1,10 @@
-## Decentralized Patient Crowdfunding Platform
+## Anudaan- Decentralized Patient Crowdfunding Platform
 
-Welcome to the Decentralized Patient Crowdfunding Platform GitHub repository! This platform serves as a crowdfunding solution for patients seeking financial assistance for their medical treatments. By harnessing blockchain technology and decentralized finance (DeFi) principles, patients can initiate campaigns to gather funds for their medical expenses.
+This platform serves as a crowdfunding solution for patients seeking financial assistance for their medical treatments. By harnessing blockchain technology and decentralized finance (DeFi) principles, patients can initiate campaigns to gather funds for their medical expenses.
 
 ### Description
 
-The Decentralized Patient Crowdfunding Platform enables patients to create campaigns by inputting their details and setting fundraising goals. Contributors can then make donations to support these campaigns. The platform operates on the Sepolia Testnet Ethereum network, ensuring secure and transparent transactions.
+The Anudaan- Decentralized Patient Crowdfunding Platform enables patients to create campaigns by inputting their details and setting fundraising goals. Contributors can then make donations to support these campaigns. The platform operates on the Sepolia Testnet Ethereum network, ensuring secure and transparent transactions.
 
 ### Execution Steps
 
@@ -45,11 +45,6 @@ The Decentralized Patient Crowdfunding Platform enables patients to create campa
    npm start
    ```
 
-### License
-
-This project is licensed under the [MIT License](LICENSE).
-
-### Contact
 
 For any inquiries or support, please contact the project maintainer at [sanikam1543@gmail.com](mailto:sanikam1543@gmail.com).
 
